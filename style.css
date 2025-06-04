@@ -1,0 +1,90 @@
+/* 1. Style for the body tag */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* 2. Style for the header tag */
+header {
+  background-color: #cce5ff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #004488;
+}
+
+/* 3. Style for the nav tag */
+nav {
+  background-color: #004488;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+  padding: 0;
+  display: inline-block;
+  width: auto;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  background-color: #003366;
+  border-radius: 5px;
+}
+
+/* 4. Style for the main tag */
+main {
+  background-color: #ffffff;
+  padding: 20px;
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+/* 5. Style for the footer tag */
+footer {
+  background-color: #004488;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+/* 6. Style for the li tag */
+li {
+  display: inline-block;
+  width: auto;
+}
+
+/* 7. Style for the h1 tag */
+h1 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #004488;
+  margin: 10px 0;
+}
+
+/* 8. Style for the p tag */
+p {
+  line-height: 1.6;
+  color: #333;
+}
