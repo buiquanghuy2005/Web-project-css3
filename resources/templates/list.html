@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Danh sách cầu thủ</title></head>
+<body>
+<h2>Danh sách cầu thủ</h2>
+<a th:href="@{/cauthu/new}">Thêm cầu thủ</a>
+<table border="1">
+    <tr><th>Tên</th><th>Tuổi</th><th>Vị trí</th><th>Quốc tịch</th><th>Hành động</th></tr>
+    <tr th:each="ct : ${dsCauThu}">
+        <td th:text="${ct.ten}"></td>
+        <td th:text="${ct.tuoi}"></td>
+        <td th:text="${ct.viTri}"></td>
+        <td th:text="${ct.quocTich}"></td>
+        <td>
+            <a th:href="@{/cauthu/edit/{id}(id=${ct.id})}">Sửa</a>
+            <a th:href="@{/cauthu/delete/{id}(id=${ct.id})}" onclick="return confirm('Xóa?')">Xóa</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

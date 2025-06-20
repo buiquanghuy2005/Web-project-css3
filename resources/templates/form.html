@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Thêm/Sửa cầu thủ</title></head>
+<body>
+<h2>Thông tin cầu thủ</h2>
+<form th:action="@{/cauthu}" th:object="${cauThu}" method="post">
+    <input type="hidden" th:field="*{id}" />
+    Tên: <input type="text" th:field="*{ten}" /><br/>
+    Tuổi: <input type="number" th:field="*{tuoi}" /><br/>
+    Vị trí: <input type="text" th:field="*{viTri}" /><br/>
+    Quốc tịch: <input type="text" th:field="*{quocTich}" /><br/>
+    <button type="submit">Lưu</button>
+</form>
+</body>
+</html>
